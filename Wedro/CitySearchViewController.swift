@@ -70,7 +70,7 @@ class CitySearchViewController: UIViewController {
     }
     
     func loadCities() {
-        
+        //
     }
 }
 
