@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE5BB4A6213D8240005A0650 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BB4A5213D8240005A0650 /* CityTableViewCell.swift */; };
+		DE5BB4A8213D898F005A0650 /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5BB4A7213D898F005A0650 /* city.list.json */; };
+		DE5BB4AE213D8F35005A0650 /* LocateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BB4AD213D8F35005A0650 /* LocateTableViewController.swift */; };
+		DE5BB4B0213EF3EF005A0650 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BB4AF213EF3EF005A0650 /* City.swift */; };
+		DEF3AB28213AFAE300E077A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB27213AFAE300E077A1 /* AppDelegate.swift */; };
+		DEF3AB2A213AFAE300E077A1 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB29213AFAE300E077A1 /* CitySearchViewController.swift */; };
+		DEF3AB2D213AFAE300E077A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF3AB2B213AFAE300E077A1 /* Main.storyboard */; };
+		DEF3AB2F213AFAE400E077A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF3AB2E213AFAE400E077A1 /* Assets.xcassets */; };
+		DEF3AB32213AFAE400E077A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF3AB30213AFAE400E077A1 /* LaunchScreen.storyboard */; };
+		DEF3AB3D213AFAE400E077A1 /* WedroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB3C213AFAE400E077A1 /* WedroTests.swift */; };
+		DEF3AB48213AFAE400E077A1 /* WedroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB47213AFAE400E077A1 /* WedroUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF3AB39213AFAE400E077A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF3AB1C213AFAE300E077A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF3AB23213AFAE300E077A1;
+			remoteInfo = Wedro;
+		};
+		DEF3AB44213AFAE400E077A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF3AB1C213AFAE300E077A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF3AB23213AFAE300E077A1;
+			remoteInfo = Wedro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE5BB4A5213D8240005A0650 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		DE5BB4A7213D898F005A0650 /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = city.list.json; path = ../../../../Downloads/city.list.json; sourceTree = "<group>"; };
+		DE5BB4AD213D8F35005A0650 /* LocateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateTableViewController.swift; sourceTree = "<group>"; };
+		DE5BB4AF213EF3EF005A0650 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		DEF3AB24213AFAE300E077A1 /* Wedro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wedro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF3AB27213AFAE300E077A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEF3AB29213AFAE300E077A1 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
+		DEF3AB2C213AFAE300E077A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEF3AB2E213AFAE400E077A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF3AB31213AFAE400E077A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEF3AB33213AFAE400E077A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF3AB38213AFAE400E077A1 /* WedroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF3AB3C213AFAE400E077A1 /* WedroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedroTests.swift; sourceTree = "<group>"; };
+		DEF3AB3E213AFAE400E077A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF3AB43213AFAE400E077A1 /* WedroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF3AB47213AFAE400E077A1 /* WedroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedroUITests.swift; sourceTree = "<group>"; };
+		DEF3AB49213AFAE400E077A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF3AB21213AFAE300E077A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB35213AFAE400E077A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB40213AFAE400E077A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF3AB1B213AFAE300E077A1 = {
+			isa = PBXGroup;
+			children = (
+				DEF3AB26213AFAE300E077A1 /* Wedro */,
+				DEF3AB3B213AFAE400E077A1 /* WedroTests */,
+				DEF3AB46213AFAE400E077A1 /* WedroUITests */,
+				DEF3AB25213AFAE300E077A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF3AB25213AFAE300E077A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3AB24213AFAE300E077A1 /* Wedro.app */,
+				DEF3AB38213AFAE400E077A1 /* WedroTests.xctest */,
+				DEF3AB43213AFAE400E077A1 /* WedroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF3AB26213AFAE300E077A1 /* Wedro */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BB4A7213D898F005A0650 /* city.list.json */,
+				DE5BB4AF213EF3EF005A0650 /* City.swift */,
+				DEF3AB27213AFAE300E077A1 /* AppDelegate.swift */,
+				DE5BB4A5213D8240005A0650 /* CityTableViewCell.swift */,
+				DE5BB4AD213D8F35005A0650 /* LocateTableViewController.swift */,
+				DEF3AB29213AFAE300E077A1 /* CitySearchViewController.swift */,
+				DEF3AB2B213AFAE300E077A1 /* Main.storyboard */,
+				DEF3AB2E213AFAE400E077A1 /* Assets.xcassets */,
+				DEF3AB30213AFAE400E077A1 /* LaunchScreen.storyboard */,
+				DEF3AB33213AFAE400E077A1 /* Info.plist */,
+			);
+			path = Wedro;
+			sourceTree = "<group>";
+		};
+		DEF3AB3B213AFAE400E077A1 /* WedroTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3AB3C213AFAE400E077A1 /* WedroTests.swift */,
+				DEF3AB3E213AFAE400E077A1 /* Info.plist */,
+			);
+			path = WedroTests;
+			sourceTree = "<group>";
+		};
+		DEF3AB46213AFAE400E077A1 /* WedroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3AB47213AFAE400E077A1 /* WedroUITests.swift */,
+				DEF3AB49213AFAE400E077A1 /* Info.plist */,
+			);
+			path = WedroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF3AB23213AFAE300E077A1 /* Wedro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF3AB4C213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "Wedro" */;
+			buildPhases = (
+				DEF3AB20213AFAE300E077A1 /* Sources */,
+				DEF3AB21213AFAE300E077A1 /* Frameworks */,
+				DEF3AB22213AFAE300E077A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wedro;
+			productName = Wedro;
+			productReference = DEF3AB24213AFAE300E077A1 /* Wedro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF3AB37213AFAE400E077A1 /* WedroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF3AB4F213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "WedroTests" */;
+			buildPhases = (
+				DEF3AB34213AFAE400E077A1 /* Sources */,
+				DEF3AB35213AFAE400E077A1 /* Frameworks */,
+				DEF3AB36213AFAE400E077A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF3AB3A213AFAE400E077A1 /* PBXTargetDependency */,
+			);
+			name = WedroTests;
+			productName = WedroTests;
+			productReference = DEF3AB38213AFAE400E077A1 /* WedroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEF3AB42213AFAE400E077A1 /* WedroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF3AB52213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "WedroUITests" */;
+			buildPhases = (
+				DEF3AB3F213AFAE400E077A1 /* Sources */,
+				DEF3AB40213AFAE400E077A1 /* Frameworks */,
+				DEF3AB41213AFAE400E077A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF3AB45213AFAE400E077A1 /* PBXTargetDependency */,
+			);
+			name = WedroUITests;
+			productName = WedroUITests;
+			productReference = DEF3AB43213AFAE400E077A1 /* WedroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF3AB1C213AFAE300E077A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jan Růžička";
+				TargetAttributes = {
+					DEF3AB23213AFAE300E077A1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DEF3AB37213AFAE400E077A1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DEF3AB23213AFAE300E077A1;
+					};
+					DEF3AB42213AFAE400E077A1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DEF3AB23213AFAE300E077A1;
+					};
+				};
+			};
+			buildConfigurationList = DEF3AB1F213AFAE300E077A1 /* Build configuration list for PBXProject "Wedro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF3AB1B213AFAE300E077A1;
+			productRefGroup = DEF3AB25213AFAE300E077A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF3AB23213AFAE300E077A1 /* Wedro */,
+				DEF3AB37213AFAE400E077A1 /* WedroTests */,
+				DEF3AB42213AFAE400E077A1 /* WedroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF3AB22213AFAE300E077A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF3AB32213AFAE400E077A1 /* LaunchScreen.storyboard in Resources */,
+				DE5BB4A8213D898F005A0650 /* city.list.json in Resources */,
+				DEF3AB2F213AFAE400E077A1 /* Assets.xcassets in Resources */,
+				DEF3AB2D213AFAE300E077A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB36213AFAE400E077A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB41213AFAE400E077A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF3AB20213AFAE300E077A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5BB4A6213D8240005A0650 /* CityTableViewCell.swift in Sources */,
+				DE5BB4B0213EF3EF005A0650 /* City.swift in Sources */,
+				DE5BB4AE213D8F35005A0650 /* LocateTableViewController.swift in Sources */,
+				DEF3AB2A213AFAE300E077A1 /* CitySearchViewController.swift in Sources */,
+				DEF3AB28213AFAE300E077A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB34213AFAE400E077A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF3AB3D213AFAE400E077A1 /* WedroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF3AB3F213AFAE400E077A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF3AB48213AFAE400E077A1 /* WedroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF3AB3A213AFAE400E077A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF3AB23213AFAE300E077A1 /* Wedro */;
+			targetProxy = DEF3AB39213AFAE400E077A1 /* PBXContainerItemProxy */;
+		};
+		DEF3AB45213AFAE400E077A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF3AB23213AFAE300E077A1 /* Wedro */;
+			targetProxy = DEF3AB44213AFAE400E077A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEF3AB2B213AFAE300E077A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF3AB2C213AFAE300E077A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEF3AB30213AFAE400E077A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF3AB31213AFAE400E077A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF3AB4A213AFAE400E077A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEF3AB4B213AFAE400E077A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF3AB4D213AFAE400E077A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wedro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.Wedro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF3AB4E213AFAE400E077A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wedro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.Wedro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEF3AB50213AFAE400E077A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WedroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.WedroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedro.app/Wedro";
+			};
+			name = Debug;
+		};
+		DEF3AB51213AFAE400E077A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WedroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.WedroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedro.app/Wedro";
+			};
+			name = Release;
+		};
+		DEF3AB53213AFAE400E077A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WedroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.WedroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wedro;
+			};
+			name = Debug;
+		};
+		DEF3AB54213AFAE400E077A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WedroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ruza.WedroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wedro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF3AB1F213AFAE300E077A1 /* Build configuration list for PBXProject "Wedro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF3AB4A213AFAE400E077A1 /* Debug */,
+				DEF3AB4B213AFAE400E077A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF3AB4C213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "Wedro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF3AB4D213AFAE400E077A1 /* Debug */,
+				DEF3AB4E213AFAE400E077A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF3AB4F213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "WedroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF3AB50213AFAE400E077A1 /* Debug */,
+				DEF3AB51213AFAE400E077A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF3AB52213AFAE400E077A1 /* Build configuration list for PBXNativeTarget "WedroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF3AB53213AFAE400E077A1 /* Debug */,
+				DEF3AB54213AFAE400E077A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF3AB1C213AFAE300E077A1 /* Project object */;
+}

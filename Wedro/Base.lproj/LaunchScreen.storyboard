@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4S-8u-rOH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="AjV-Rx-hKL">
+            <objects>
+                <viewController id="C4S-8u-rOH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7B-W4-Dkm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGS-7I-CVJ">
+                                <rect key="frame" x="20" y="145" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9G6-U7-OcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A weather forecast client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnq-Rj-dEW">
+                                <rect key="frame" x="20" y="198" width="335" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="vAo-AT-hTc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The GPS icon was designed by bqlqn from www.flaticon.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ6-1m-Vh6">
+                                <rect key="frame" x="10" y="637" width="355" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Cpo-id-LF8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mnq-Rj-dEW" firstAttribute="leading" secondItem="pML-Oo-Esk" secondAttribute="leading" constant="20" id="8Cz-yc-857"/>
+                            <constraint firstItem="pML-Oo-Esk" firstAttribute="bottom" secondItem="gQ6-1m-Vh6" secondAttribute="bottom" constant="10" id="Jrv-zV-XRu"/>
+                            <constraint firstItem="Mnq-Rj-dEW" firstAttribute="top" secondItem="MGS-7I-CVJ" secondAttribute="bottom" constant="8" id="KPX-E7-ncw"/>
+                            <constraint firstItem="gQ6-1m-Vh6" firstAttribute="leading" secondItem="pML-Oo-Esk" secondAttribute="leading" constant="10" id="LfH-Og-76g"/>
+                            <constraint firstItem="pML-Oo-Esk" firstAttribute="trailing" secondItem="Mnq-Rj-dEW" secondAttribute="trailing" constant="20" id="OzS-RM-F2d"/>
+                            <constraint firstItem="MGS-7I-CVJ" firstAttribute="top" secondItem="pML-Oo-Esk" secondAttribute="top" constant="125" id="QkK-tV-EWa"/>
+                            <constraint firstItem="pML-Oo-Esk" firstAttribute="trailing" secondItem="gQ6-1m-Vh6" secondAttribute="trailing" constant="10" id="oND-Ye-g5e"/>
+                            <constraint firstItem="MGS-7I-CVJ" firstAttribute="leading" secondItem="pML-Oo-Esk" secondAttribute="leading" constant="20" id="pIM-KS-YUc"/>
+                            <constraint firstItem="pML-Oo-Esk" firstAttribute="trailing" secondItem="MGS-7I-CVJ" secondAttribute="trailing" constant="20" id="xCF-VQ-Hqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pML-Oo-Esk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Orj-aY-uth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1188" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>
