@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 
 class CitySearchViewController: UIViewController {
@@ -44,6 +45,7 @@ class CitySearchViewController: UIViewController {
         
         // JSON deserialization
         //
+        loadCities()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,17 +62,65 @@ class CitySearchViewController: UIViewController {
         
         if gestureRecognizer.state == .ended {
             guard let controller = storyboard?.instantiateViewController(withIdentifier: locateTableViewIdentifier) as? LocateTableViewController else {
-                fatalError("The view controller next in the segue initialised after using the 'Find by location' image button is not a LocateTableViewController!")
+                fatalError("[FATAL] The view controller next in the segue initialised after using the 'Find by location' image button is not a LocateTableViewController!")
             }
             
             controller.citiesToShow = nearbyCities
-                
+            
+            print("[INFO] Presenting nearby city list.")
+            
             present(controller, animated: true, completion: nil)
         }
     }
     
     func loadCities() {
-        //
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "CityEntity")
+        
+//        if let count = try? context.count(for: request), count != 0 {
+//            print("Yes!")
+//
+//        } else {
+            if let dir = Bundle.main.path(forResource: "city.list", ofType: "json") {
+                do {
+                    let data = try Data(contentsOf: URL(fileURLWithPath: dir), options: .mappedIfSafe)
+                    let decoder = JSONDecoder()
+                    
+                    let entity = NSEntityDescription.entity(forEntityName: "CityEntity", in: context)
+                    
+                    if let cities = try? decoder.decode([City].self, from: data) {
+                        for city in cities {
+                            let cityRecord = NSManagedObject(entity: entity!, insertInto: context)
+
+                            cityRecord.setValue(city.name, forKey: "name")
+                            cityRecord.setValue(city.country, forKey: "country")
+                            cityRecord.setValue(city.id, forKey: "id")
+                            cityRecord.setValue(city.location["lat"], forKey: "latitude")
+                            cityRecord.setValue(city.location["lon"], forKey: "longitude")
+                        }
+
+                        do {
+                            try context.save()
+
+                        } catch {
+                            print("[ERROR] Couldn't save cities to Core Data model!")
+                        }
+
+                        allCities = cities
+
+                    } else {
+                        print("[ERROR] Can't initialize city list from data: \(data)")
+                    }
+                
+                } catch {
+                    fatalError("[FATAL] Can't load JSON city list!")
+                }
+            }
+//        }
+        
+        print("[INFO] Successfully loaded \(allCities.count) cities.")
     }
 }
 
@@ -95,7 +145,7 @@ extension CitySearchViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error: \(error)")
+        print("[Error] Location manager failed with error: \(error)")
     }
 }
 

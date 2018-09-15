@@ -11,6 +11,7 @@
 		DE5BB4A8213D898F005A0650 /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5BB4A7213D898F005A0650 /* city.list.json */; };
 		DE5BB4AE213D8F35005A0650 /* LocateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BB4AD213D8F35005A0650 /* LocateTableViewController.swift */; };
 		DE5BB4B0213EF3EF005A0650 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BB4AF213EF3EF005A0650 /* City.swift */; };
+		DEB6850C214189C4004B6BD8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB6850A214189C4004B6BD8 /* Model.xcdatamodeld */; };
 		DEF3AB28213AFAE300E077A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB27213AFAE300E077A1 /* AppDelegate.swift */; };
 		DEF3AB2A213AFAE300E077A1 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3AB29213AFAE300E077A1 /* CitySearchViewController.swift */; };
 		DEF3AB2D213AFAE300E077A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF3AB2B213AFAE300E077A1 /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 		DE5BB4A7213D898F005A0650 /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = city.list.json; path = ../../../../Downloads/city.list.json; sourceTree = "<group>"; };
 		DE5BB4AD213D8F35005A0650 /* LocateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateTableViewController.swift; sourceTree = "<group>"; };
 		DE5BB4AF213EF3EF005A0650 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		DEB684CB21418930004B6BD8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DEB6850B214189C4004B6BD8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DEF3AB24213AFAE300E077A1 /* Wedro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wedro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3AB27213AFAE300E077A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF3AB29213AFAE300E077A1 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEB684CA21418930004B6BD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEB684CB21418930004B6BD8 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEF3AB1B213AFAE300E077A1 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				DEF3AB3B213AFAE400E077A1 /* WedroTests */,
 				DEF3AB46213AFAE400E077A1 /* WedroUITests */,
 				DEF3AB25213AFAE300E077A1 /* Products */,
+				DEB684CA21418930004B6BD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +127,7 @@
 				DEF3AB2E213AFAE400E077A1 /* Assets.xcassets */,
 				DEF3AB30213AFAE400E077A1 /* LaunchScreen.storyboard */,
 				DEF3AB33213AFAE400E077A1 /* Info.plist */,
+				DEB6850A214189C4004B6BD8 /* Model.xcdatamodeld */,
 			);
 			path = Wedro;
 			sourceTree = "<group>";
@@ -274,6 +287,7 @@
 				DE5BB4AE213D8F35005A0650 /* LocateTableViewController.swift in Sources */,
 				DEF3AB2A213AFAE300E077A1 /* CitySearchViewController.swift in Sources */,
 				DEF3AB28213AFAE300E077A1 /* AppDelegate.swift in Sources */,
+				DEB6850C214189C4004B6BD8 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +608,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEB6850A214189C4004B6BD8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEB6850B214189C4004B6BD8 /* Model.xcdatamodel */,
+			);
+			currentVersion = DEB6850B214189C4004B6BD8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DEF3AB1C213AFAE300E077A1 /* Project object */;
 }

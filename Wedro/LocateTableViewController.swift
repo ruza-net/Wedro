@@ -41,7 +41,7 @@ class LocateTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cityCellPrototypeIdentifier, for: indexPath) as? CityTableViewCell else {
-            fatalError("Dequeued cell prototype is not a CityTableViewCell!")
+            fatalError("[FATAL] Dequeued cell prototype is not a CityTableViewCell!")
         }
 
         cell.cityNameLabel.text = citiesToShow[indexPath.row]
